@@ -1,0 +1,91 @@
+body {
+    background-color: #282929;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    right: -200px; /* Initial position outside the page */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    animation: slideIn 1s forwards 0.5s; /* Delayed slide-in animation */
+}
+
+.image-container img {
+    width: 110px; /* Ajuste la largeur selon tes besoins */
+    height: auto;
+    margin-bottom: 4vh; /* Espace entre les images */
+    cursor: pointer;
+    opacity: 0; /* Initial opacity set to 0 */
+    animation: fadeIn 1s forwards; /* Fade-in animation for each image */
+}
+
+.ligne1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+
+.ligne2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.ligne3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.ligne4 {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.texte {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    font-family: "basic-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes slideIn {
+    to {
+        right: 20px; /* Final position on the page */
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Make the image visible */
+    }
+}
